@@ -39,7 +39,7 @@
             display: inline-block;
             max-width: 600px;
         }
-        .button {
+        a.button {
             display: inline-block;
             margin-top: 20px;
             padding: 12px 25px;
@@ -50,11 +50,13 @@
             border-radius: 8px;
             transition: 0.3s ease;
         }
-        .button:hover {
+        a.button:hover {
             background-color: #ddd;
         }
-        a {
-            color: #00ffff;
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -72,19 +74,21 @@
             <hr style="margin:20px 0; border: 1px solid rgba(255,255,255,0.3);">
 
             <p><strong>Join Our Newsletter</strong></p>
-            <p>Get weekly topics, events, and discussion updates.</p>
+            <p>Enter your email below to get weekly updates:</p>
 
-            <!-- REPLACE THE LINK BELOW WITH YOUR GOOGLE FORM LINK -->
-            <a class="button" href="PASTE_YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">
-                Join the Newsletter
-            </a>
+            <!-- Embedded Google Form -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxkWf4qNj0WhfVqkixFTRpojjxAQgWz9n0u4TJrXtmuOog/viewform?embedded=true" 
+                    width="100%" 
+                    height="200" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0">
+                Loading…
+            </iframe>
+
+            <p style="margin-top:10px;">Or email us directly at <a href="mailto:plato@middlebury.edu">plato@middlebury.edu</a></p>
 
             <hr style="margin:20px 0; border: 1px solid rgba(255,255,255,0.3);">
-
-            <p>
-                Questions? Email us at  
-                <a href="mailto:plato@middlebury.edu">plato@middlebury.edu</a>
-            </p>
 
             <a class="button" href="https://middlebury.presence.io/organization/the-symposium-philosophy-club" target="_blank">
                 Visit Our Presence Page
