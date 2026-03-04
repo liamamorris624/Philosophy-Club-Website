@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psychedelic Philosophy Club</title>
+    <title>Philosophy Club</title>
     <style>
         body {
-            background: linear-gradient(to right, #ff5f6d, #ffc371);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
             color: white;
-            font-family: 'Arial', sans-serif;
-            animation: backgroundAnimation 10s infinite alternate;
+            background: linear-gradient(45deg, #ff0080, #8000ff, #00ff80, #0080ff);
+            background-size: 300% 300%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
             text-align: center;
+            padding: 50px;
         }
         h1 {
             font-size: 3em;
-            margin-top: 50px;
-            animation: textAnimation 1.5s infinite alternate;
+            margin: 0;
         }
         p {
             font-size: 1.5em;
         }
-        @keyframes backgroundAnimation {
-            0% { background: linear-gradient(to right, #ff5f6d, #ffc371); }
-            100% { background: linear-gradient(to right, #6a11cb, #2575fc); }
-        }
-        @keyframes textAnimation {
-            0% { transform: scale(1); }
-            100% { transform: scale(1.1); }
+        .info {
+            font-size: 1.2em;
+            margin-top: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Psychedelic Philosophy Club!</h1>
-    <p>Join us for our weekly meetings.</p>
-    <p><strong>When:</strong> Wednesdays 6-7 PM</p>
-    <p><strong>Email:</strong> <a href="mailto:plato@middlebury.edu" style="color: lightyellow;">plato@middlebury.edu</a></p>
-    <p><strong>Presence Link:</strong> <a href="https://presence.io" style="color: lightyellow;">Click here to attend</a></p>
+    <div class="container">
+        <h1>Welcome to the Philosophy Club!</h1>
+        <p>Join us for vibrant discussions and explorations of philosophical ideas.</p>
+        <div class="info">
+            <p><strong>Meeting Info:</strong></p>
+            <p>📅 Axinn Wednesday 6-7 PM</p>
+            <p>📧 Email us at <a href="mailto:plato@middlebury.edu">plato@middlebury.edu</a></p>
+            <p><a href="https://your.presence.link">Join us on Presence</a></p>
+        </div>
+    </div>
 </body>
 </html>
